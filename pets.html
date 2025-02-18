@@ -21,6 +21,15 @@
             margin-top: 30px;
             font-size: 32px;
         }
+        .image-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .thumbnail img {
+            width: 150px; /* Smaller size for thumbnails */
+            height: 150px;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
@@ -54,6 +63,40 @@
             <p>When resizing the page, the first row (letters) breaks first. This is because the 'col-sm-2' class is applied to the first row, which makes it more prone to wrapping on smaller screens, whereas the second row (pet names) uses the 'col-md' class, which is designed to remain more flexible across medium-sized screens.</p>
         </div>
 
+    </div>
+    <!-- Pet Images Section -->
+    <h1 class="text-center mt-5">Pet Images</h1>
+
+    <!-- Full-sized Images -->
+    <div class="container image-container">
+        <h3>Full-Sized Images</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="snake.jpg" class="img-fluid" width="450" height="450" alt="Snake">
+            </div>
+            <div class="col-md-4">
+                <img src="Antelope.jpg" class="img-fluid" width="450" height="450" alt="Antelope">
+            </div>
+            <div class="col-md-4">
+                <img src="Giraffe.jpg" class="img-fluid" width="450" height="450" alt="Giraffe">
+            </div>
+        </div>
+    </div>
+
+    <!-- Thumbnails -->
+    <div class="container image-container">
+        <h3>Thumbnails</h3>
+        <div class="row">
+            <div class="col-md-4 thumbnail">
+                <img src="snake.jpg" class="img-thumbnail" alt="Snake">
+            </div>
+            <div class="col-md-4 thumbnail">
+                <img src="Antelope.jpg" class="img-thumbnail" alt="Antelope">
+            </div>
+            <div class="col-md-4 thumbnail">
+                <img src="Giraffe.jpg" class="img-thumbnail" alt="Giraffe">
+            </div>
+        </div>
     </div>
 
     <!-- Bootstrap JS -->
